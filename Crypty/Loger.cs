@@ -42,7 +42,6 @@ namespace Crypty
             using (var streamWriter = new StreamWriter(Environment.CurrentDirectory + @"\" + JournalDirectoryName + @"\" + DateTime.Now.ToShortDateString(), true, Encoding.UTF8))
             {
                 streamWriter.WriteLine(MainDivider);
-                streamWriter.WriteLine("Date: " + DateTime.Now.ToShortDateString());
                 streamWriter.WriteLine("Time: " + DateTime.Now.ToShortTimeString());
                 streamWriter.WriteLine(SlaveDivider);
                 streamWriter.WriteLine("Type: " + logKind);
