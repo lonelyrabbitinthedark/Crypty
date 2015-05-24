@@ -19,7 +19,7 @@ namespace Crypty
             #region Events
 
             cancelButton.Click += (sender, args) => this.Close();
-            encodeButton.Click += (sender, args) => openFileDialog1.ShowDialog();
+            encodeButton.Click += (sender, args) => { if (keyTextBox.Text != "") openFileDialog1.ShowDialog(); };
 
             #endregion
         }
