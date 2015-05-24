@@ -19,7 +19,7 @@ namespace Crypty
             #region Events
 
             exitButton.Click += (sender, args) => Application.Exit();
-
+             
             #endregion
         }
 
